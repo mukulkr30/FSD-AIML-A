@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .c1{
+            width: 100%;
+        }
+    </style>
+    <title>registration</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Register here</h1>
+    <form action="register.js" name="register" method="post" >
+        <label for="uname"> name:</label><br>
+        <input class="c1" type="text"  name="uname" placeholder="Enter Your Name" required><br>
+        <label for="mobile">Mobile:</label><br>
+        <input class="c1" type="number" name="mobile" id="" placeholder="Enter your mobile" required><br>
+        <label for="email" >E-mail:</label><br>
+        <input class="c1" type="email" name="email" placeholder="Enter yout Mobile" required><br>
+        <label for="dob">DOB</label><br>
+        <input class="c1" type="date" name="DOB" required><br>
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="M">Male
+        <input  type="radio" name="gender" value="F">Female<br>
+        <label for="address" >Address</label><br>
+        <textarea class="c1" rows="5" cols="50" name="" id="" placeholder="Enter your Address" required></textarea><br>
+        <label for="branch" >Branch</label><br>
+        <select class="c1" name="branch" id="" required>
+            <option value="cse">CSE</option>
+            <option value="Aiml">AIML</option>
+            <option value="Ds">DS</option>
+            <option value="It">IT</option>
+            <option value="Ece">ECE</option>
+            <option value="Me">ME</option>
+            <option value="Elce">ELCE</option>
+        </select><br>
+        <select class="c1" name="semester" id="" required>
+            <option value="1">I</option>
+            <option value="2">II</option>
+            <option value="3">III</option>
+            <option value="4">IV</option>
+            <option value="5">V</option>
+            <option value="6">VI</option>
+            <option value="7">VII</option>
+            <option value="8">VIII</option>
+        </select>
+        <br>
+        
+        <div style="display: flex;justify-content: center;align-items: center;"><button style="width: 50%;" type="submit">Submit</button>
+        <button style="width: 50%;"  type="reset">Reset</button></div>
+    </form>
+</body>
+</html>
